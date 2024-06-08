@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Medical Assistance</title>
     <link rel="stylesheet" href="./css/main.css" />
+    <!-- Boxicons -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.4/dist/boxicons.js" integrity="sha512-kWH92pHUC/rcjpSMu19lT+H6TlZwZCAftg9AuSw+AVYSdEKSlXXB8o6g12mg5f+Pj5xO40A7ju2ot/VdodCthw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   </head>
   <body>
     <!-- Header starts -->
@@ -15,24 +17,26 @@
             <img src="./images/logo.svg" alt="logo" />
           </a>
 
-          <ul class="header__navigation">
-            <li class="header__navigation-item active">
-              <a href="#start" class="header__navigation-link">Boshlash</a>
-            </li>
-            <li class="header__navigation-item">
-              <a href="#about-us" class="header__navigation-link"
-                >Biz haqimizda</a
-              >
-            </li>
-            <li class="header__navigation-item">
-              <a href="#services" class="header__navigation-link">Xizmatlar</a>
-            </li>
-            <li class="header__navigation-item">
-              <a href="#depositions" class="header__navigation-link"
-                >Depozitlar</a
-              >
-            </li>
-          </ul>
+          <nav class="header__navigation">
+            <ul class="header__navigation-list">
+              <li class="header__navigation-item active">
+                <a href="#start" class="header__navigation-link">Boshlash</a>
+              </li>
+              <li class="header__navigation-item">
+                <a href="#about-us" class="header__navigation-link"
+                  >Biz haqimizda</a
+                >
+              </li>
+              <li class="header__navigation-item">
+                <a href="#services" class="header__navigation-link">Xizmatlar</a>
+              </li>
+              <li class="header__navigation-item">
+                <a href="#depositions" class="header__navigation-link"
+                  >Depozitlar</a
+                >
+              </li>
+            </ul>
+          </nav>
 
           <button class="header__button secondary__button">
             Rejalashtirish
@@ -47,13 +51,14 @@
       <div class="container">
         <div class="hero__wrapper">
           <div class="hero__content">
-            <span class="hero_subtitle">BOAS-VINDAS A DOCTORCARE 👋</span>
-            <h1 class="hero__title">Assistência médica simplificada para todos</h1>
+            <h3 class="hero_subtitle">Xush kelibsiz, DOCTORCARE 👋</h3>
+            <h1 class="hero__title">Hamma uchun soddalashtirilgan tibbiy xizmat</h1>
             <p class="hero__description">
-              Os médicos da DoctorCare vão além dos sintomas para tratar a causa raiz de sua doença e proporcionar uma cura a longo prazo.
+              DoctorCare shifokorlari kasallikning asosiy sababini davolash va uzoq muddatli davolanishni ta'minlash uchun simptomlardan tashqariga chiqadilar.
             </p>
-            <button class="hero__button secondary__button">
-              Rejalashtirish 
+            <button class="hero__button primary__button">
+              <box-icon color='#fff' type='logo' name='whatsapp'></box-icon>
+              Maslahatlashish
             </button>
           </div>
 
