@@ -27,6 +27,10 @@ ul {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 .container {
   max-width: 1140px;
   margin: 0 auto;
@@ -94,11 +98,29 @@ ul {
 }
 
 .header__navigation-link {
-  text-decoration: none;
   font-size: 17px;
   line-height: 21px;
   color: var(--brand-green);
   opacity: 80%;
+}
+
+.header__mobile-menu {
+  display: none;
+  cursor: pointer;
+}
+
+.header__mobile-menubar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: var(--brand-green);
+  height: 100vh;
+  width: 320px;
+  z-index: 100;
+  display: none;
+  flex-direction: column;
+  gap: 30px;
+  padding: 32px;
 }
 
 /* Hero styles */
@@ -192,4 +214,28 @@ ul {
 }
 
 @media screen and (max-width: 768px) {
+  .header__button,
+  .header__navigation {
+    display: none;
+  }
+
+  .header__navigation-link {
+    color: var(--white);
+  }
+
+  .header__mobile-menu {
+    display: block;
+  }
+
+  .header__mobile-menubar-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .header__mobile-menubar-close {
+    cursor: pointer;
+  }
 }

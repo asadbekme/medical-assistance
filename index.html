@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Medical Assistance</title>
+    <!-- CSS -->
     <link rel="stylesheet" href="./css/main.css" />
     <!-- Boxicons -->
     <script
@@ -48,6 +49,36 @@
           <button class="header__button secondary__button">
             Rejalashtirish
           </button>
+
+          <!-- Mobile menu -->
+          <box-icon
+            name="menu-alt-right"
+            color="#00856f"
+            class="header__mobile-menu"
+          ></box-icon>
+
+          <!-- Mobile menubar -->
+          <div class="header__mobile-menubar">
+            <div class="header__mobile-menubar-header">
+              <a href="/" class="header__logo">
+                <img src="./images/logo-white.svg" alt="logo" />
+              </a>
+              <box-icon
+                name="x"
+                color="#fff"
+                class="header__mobile-menubar-close"
+              ></box-icon>
+            </div>
+            <a href="#start" class="header__navigation-link">Boshlash</a>
+            <a href="#about-us" class="header__navigation-link"
+              >Biz haqimizda</a
+            >
+            <a href="#services" class="header__navigation-link">Xizmatlar</a>
+            <a href="#contact" class="header__navigation-link">Bog'lanish</a>
+            <button class="header__button secondary__button">
+              Rejalashtirish
+            </button>
+          </div>
         </div>
       </div>
     </header>
@@ -103,5 +134,8 @@
       </div>
     </section>
     <!-- Stats ends -->
+
+    <!-- JavaScript -->
+    <script src="./js/script.js"></script>
   </body>
 </html>
