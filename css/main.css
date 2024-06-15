@@ -163,12 +163,6 @@ a {
 }
 
 .hero__subtitle {
-  color: var(--brand-green);
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 21px;
-  letter-spacing: 8%;
   margin-bottom: 10px;
 }
 
@@ -242,7 +236,7 @@ a {
 /* Services styles */
 .services {
   background-color: var(--brand-green-light-2);
-  padding: 70px 0;
+  padding: 100px 0;
 }
 
 .services__content {
@@ -252,21 +246,8 @@ a {
   align-items: center;
 }
 
-.services__subtitle {
-  font-size: 14px;
-  line-height: 21px;
-  letter-spacing: 8%;
-  color: var(--brand-green);
-  text-transform: uppercase;
-  font-weight: 700;
-}
-
 .services__title {
   width: 56%;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 52px;
-  color: var(--grayheadline);
 }
 
 .services__cards {
@@ -363,16 +344,16 @@ a {
   background-color: var(--brand-green);
 }
 
-.footer__left {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
 .footer__wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.footer__left {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
 }
 
 .footer__text {
