@@ -49,8 +49,9 @@ button {
 }
 
 .container {
-  max-width: 1140px;
+  max-width: 1180px;
   margin: 0 auto;
+  width: 96%;
 }
 
 .primary__button {
@@ -73,6 +74,17 @@ button {
 .secondary__button:hover {
   background-color: var(--brand-green);
   color: var(--white);
+}
+
+.white__button {
+  padding: 16px 32px;
+  color: var(--brand-green);
+  background-color: var(--white);
+}
+
+.white__button:hover {
+  background-color: var(--brand-beige);
+  color: var(--brand-green-hover);
 }
 
 .section__subtitle {
@@ -134,6 +146,8 @@ button {
 .header__mobile-menu {
   display: none;
   cursor: pointer;
+  width: 36px;
+  height: 36px;
 }
 
 .header__mobile-menubar {
@@ -142,12 +156,13 @@ button {
   right: 0;
   background-color: var(--brand-green);
   height: 100vh;
-  width: 320px;
+  width: 100%;
   z-index: 100;
   display: none;
   flex-direction: column;
-  gap: 30px;
-  padding: 32px;
+  align-items: center;
+  gap: 32px;
+  padding: 20px;
 }
 
 /* Hero styles */
@@ -161,8 +176,11 @@ button {
   justify-content: space-between;
 }
 
-.hero__subtitle {
-  margin-bottom: 10px;
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
 }
 
 .hero__title {
@@ -176,7 +194,6 @@ button {
   font-size: 18px;
   line-height: 27px;
   color: var(--gray-paragraph);
-  margin: 20px 0;
   font-weight: 400;
 }
 
@@ -235,7 +252,7 @@ button {
 /* Services styles */
 .services {
   background-color: var(--brand-green-light-2);
-  padding: 100px 0;
+  padding: 80px 0 120px 0;
 }
 
 .services__content {
@@ -313,8 +330,10 @@ button {
 }
 
 .contact__content {
+  flex: 1;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   gap: 24px;
 }
 
@@ -331,10 +350,13 @@ button {
 }
 
 .contact__button {
-  width: 72%;
   display: flex;
   align-items: center;
   gap: 10px;
+}
+
+.contact__image {
+  flex: 1;
 }
 
 /* Footer styles */
@@ -370,19 +392,36 @@ button {
 
 /* Responsive styles */
 @media screen and (max-width: 1024px) {
+  /* General */
+  img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
   .container {
     width: 90%;
   }
-}
 
-@media screen and (max-width: 768px) {
+  .primary__button {
+    padding: 10px 24px;
+  }
+
+  .section__title {
+    font-size: 30px;
+    line-height: 39.06px;
+  }
+
+  /* Header */
   .header__button,
   .header__navigation {
     display: none;
   }
 
-  .header__navigation-link {
+  .header__mobile-menubar-link {
     color: var(--white);
+    font-size: 17px;
+    line-height: 21px;
   }
 
   .header__mobile-menu {
@@ -399,10 +438,97 @@ button {
 
   .header__mobile-menubar-close {
     cursor: pointer;
+    width: 36px;
+    height: 36px;
   }
 
-  /*  */
+  /* Hero */
+  .hero {
+    padding: 70px 0;
+  }
+
+  .hero__wrapper {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .hero__content {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero__title {
+    font-size: 34px;
+    line-height: 44.2px;
+  }
+
+  /* Stats */
+  .stats__wrapper {
+    transform: translateY(-34%);
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .stats__separator {
+    display: none;
+  }
+
+  /* About */
+  .about__wrapper {
+    gap: 24px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* Services */
+  .services {
+    padding: 0 0 80px 0;
+  }
+
+  .services__title {
+    width: 100%;
+    text-align: center;
+  }
+
   .services__cards {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  /* About */
+  .about,
+  .contact {
+    padding: 80px 0;
+  }
+
+  .about__wrapper {
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    gap: 50px;
+  }
+
+  /* Contact */
+  .contact__wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 50px;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 50px 0;
+  }
+
+  .footer__wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 30px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  /* Services */
+  .services__cards {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 }
