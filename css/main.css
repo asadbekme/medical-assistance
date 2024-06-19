@@ -114,10 +114,14 @@ button {
 .header {
   padding: 16px 0;
   background-color: var(--brand-green-light);
+  transition: all 0.5s ease-in-out;
+}
+
+.header.active {
   position: sticky;
   top: 0;
   z-index: 1000;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  background-color: var(--brand-green);
 }
 
 .header__wrapper {
@@ -132,7 +136,7 @@ button {
   gap: 28px;
 }
 
-.header__navigation-item.active {
+.header__navigation-link.active {
   font-weight: 600;
 }
 
@@ -141,6 +145,16 @@ button {
   line-height: 21px;
   color: var(--brand-green);
   opacity: 80%;
+}
+
+.header.active .header__navigation-link {
+  color: var(--white);
+}
+
+.header.active .header__button {
+  background-color: transparent;
+  color: var(--white);
+  border-color: var(--white);
 }
 
 .header__mobile-menu {
@@ -174,6 +188,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 24px;
 }
 
 .hero__content {
