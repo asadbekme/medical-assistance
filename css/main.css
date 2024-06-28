@@ -136,8 +136,8 @@ button {
   gap: 28px;
 }
 
-.header__navigation-link.active {
-  font-weight: 600;
+.header__navigation-item {
+  position: relative;
 }
 
 .header__navigation-link {
@@ -145,10 +145,30 @@ button {
   line-height: 21px;
   color: var(--brand-green);
   opacity: 80%;
+  transition: all 1s ease-in-out;
+}
+
+.header__navigation-link:hover::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -24px;
+  width: 100%;
+  height: 3px;
+  background-color: var(--brand-green);
+  font-weight: 600;
+}
+
+.header__navigation-link.active {
+  font-weight: 600;
 }
 
 .header.active .header__navigation-link {
   color: var(--white);
+}
+
+.header.active .header__navigation-link:hover::after {
+  background-color: var(--white);
 }
 
 .header.active .header__button {
