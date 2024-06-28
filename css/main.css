@@ -1,5 +1,5 @@
 /* Google Fonts */
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100..1000&display=swap");
 
 /* Variables */
 :root {
@@ -62,7 +62,7 @@ button {
 
 .primary__button:hover {
   background-color: var(--brand-green-hover);
-  border-color: var(--brand-green-hover);
+  border: none;
 }
 
 .secondary__button {
@@ -90,7 +90,7 @@ button {
 .section__subtitle {
   font-size: 14px;
   line-height: 21px;
-  letter-spacing: 8%;
+  letter-spacing: 1px;
   color: var(--brand-green);
   text-transform: uppercase;
   font-weight: 700;
