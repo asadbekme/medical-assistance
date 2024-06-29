@@ -62,7 +62,6 @@ button {
 
 .primary__button:hover {
   background-color: var(--brand-green-hover);
-  border: none;
 }
 
 .secondary__button {
